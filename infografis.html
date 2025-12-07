@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alur Input E-Rapor SMK V.8.0.0</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi Tailwind untuk font Inter dan warna kustom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1D4ED8',
+                        'light-blue': '#EFF6FF',
+                        'secondary-green': '#059669',
+                        'light-green': '#D1FAE5',
+                        'soft-gray': '#F9FAFB',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        .step-box {
+            min-height: 450px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 text-center mb-10">
+            ALUR INPUT REFERENSI & NILAI AKHIR <br class="sm:hidden">DI E-RAPOR SMK V.8.0.0
+        </h1>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Kolom 1: INPUT REFERENSI AWAL -->
+            <div class="step-box flex-1 bg-white rounded-2xl shadow-xl p-6 border-t-8 border-primary-blue transition duration-300 hover:shadow-2xl">
+                <h2 class="text-xl font-bold text-primary-blue mb-6 border-b pb-3">1. INPUT REFERENSI AWAL</h2>
+
+                <!-- Capaian Pembelajaran (CP) -->
+                <div class="bg-light-blue p-4 rounded-xl mb-6">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.468 9.24 5 7.5 5S4.168 5.468 3 6.253M12 6.253C13.168 5.468 14.76 5 16.5 5s3.332.468 4.5 1.253"></path></svg>
+                        <h3 class="text-lg font-bold text-gray-800">CAPAIAN PEMBELAJARAN (CP)</h3>
+                    </div>
+                    <!-- PERUBAHAN DISINI: Konten teks diperbaiki dan dirapikan -->
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="text-secondary-green mr-2 font-bold text-xl">&#x2713;</span> 
+                            Sudah disediakan <strong>aplikasi</strong>.
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-secondary-green mr-2 font-bold text-xl">&#x2713;</span> 
+                            Tambah/<strong>Kurangi</strong> (<strong>terutama</strong> Muatan Lokal).
+                        </li>
+                    </ul>
+                    <!-- AKHIR PERUBAHAN -->
+                </div>
+
+                <!-- Tujuan Pembelajaran (TP) -->
+                <div class="bg-light-blue p-4 rounded-xl">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 17v-5m6.44-5.247l-.803-.803A1 1 0 0017 10h-6a1 1 0 00-.707.293l-4.707 4.707a1 1 0 000 1.414L7.586 17a1 1 0 00.707.293h4.707a1 1 0 00.707-.293l2.88-2.88a1 1 0 00-.001-1.414z"></path></svg>
+                        <h3 class="text-lg font-bold text-gray-800">TUJUAN PEMBELAJARAN (TP)</h3>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-600 mb-2">Cara Input TP:</h4>
+                        <ul class="space-y-1 text-gray-700 ml-4 list-disc">
+                            <li>Manual</li>
+                            <li>Import Template</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-4 p-3 bg-white rounded-lg border border-primary-blue/30">
+                        <h4 class="text-sm font-medium text-gray-700">Akses Menu:</h4>
+                        <p class="font-semibold text-primary-blue text-base">Menu Referensi > Tujuan Pembelajaran > Tambah Data</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arrow Separator for Large Screens -->
+            <div class="hidden lg:flex flex-col items-center justify-center p-4">
+                <div class="w-1 h-32 bg-gray-300 rounded-full"></div>
+                <svg class="w-8 h-8 text-gray-300 -mt-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-8V7a1 1 0 112 0v3h2a1 1 0 110 2h-2v2a1 1 0 11-2 0v-2H7a1 1 0 110-2h2z" clip-rule="evenodd" transform="rotate(90 10 10) scale(1,-1)"/></svg>
+            </div>
+
+            <!-- Kolom 2: INPUT NILAI AKHIR -->
+            <div class="step-box flex-1 bg-white rounded-2xl shadow-xl p-6 border-t-8 border-secondary-green transition duration-300 hover:shadow-2xl">
+                <h2 class="text-xl font-bold text-secondary-green mb-6 border-b pb-3">2. INPUT NILAI AKHIR</h2>
+
+                <div class="bg-light-green p-4 rounded-xl">
+                    <div class="flex items-center space-x-3 mb-4 border-b border-secondary-green/30 pb-2">
+                        <h3 class="text-lg font-bold text-gray-800">INPUT NILAI AKHIR MATA PELAJARAN</h3>
+                    </div>
+                    
+                    <ol class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="font-bold text-secondary-green w-6 flex-shrink-0">1.</span>
+                            <span class="ml-2">Pilih Sub Menu <strong class="text-gray-800">Nilai Akhir</strong>.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold text-secondary-green w-6 flex-shrink-0">2.</span>
+                            <span class="ml-2">Pilih <strong class="text-gray-800">Tingkat, Rombongan Belajar (Rombel), dan Mata Pelajaran (Mapel)</strong>.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold text-secondary-green w-6 flex-shrink-0">3.</span>
+                            <span class="ml-2">Pilih Bentuk <strong class="text-gray-800">Penilaian</strong> (Nilai Akhir).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold text-secondary-green w-6 flex-shrink-0">4.</span>
+                            <span class="ml-2">Isi <strong class="text-gray-800">Nilai</strong> Peserta Didik.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold text-secondary-green w-6 flex-shrink-0">5.</span>
+                            <span class="ml-2">Pilih Status <strong class="text-gray-800">Tercapai</strong> / Tidak <strong class="text-gray-800">Tercapai</strong> untuk setiap Peserta Didik.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold text-secondary-green w-6 flex-shrink-0">6.</span>
+                            <span class="ml-2">Pilih Status TP (<strong class="text-gray-800">Tercapai</strong>/Tidak <strong class="text-gray-800">Tercapai</strong>).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold text-secondary-green w-6 flex-shrink-0">7.</span>
+                            <span class="ml-2">Klik Tombol <strong class="text-secondary-green bg-white border border-secondary-green px-2 py-0.5 rounded shadow">SIMPAN</strong>.</span>
+                        </li>
+                    </ol>
+
+                    <!-- Deskripsi Capaian -->
+                    <div class="mt-6 pt-4 border-t border-secondary-green/30">
+                        <div class="flex items-center space-x-2">
+                             <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                            <span class="font-semibold text-gray-700">Lanjut <strong class="text-gray-800">Deskripsi</strong> Capaian Kompetensi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-10 text-gray-500 text-sm">
+            E-Rapor SMK V.8.0.0
+        </div>
+    </div>
+
+</body>
+</html>
